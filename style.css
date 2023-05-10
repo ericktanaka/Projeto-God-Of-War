@@ -300,3 +300,33 @@ h2 {
     margin-top: 10px;
 }
 }
+
+@media (max-width: 1300px){
+body {
+    background-size: 120%;
+    background-position-x: -260px;
+
+}
+
+.first-section {
+    margin-top: 60px;
+}
+
+.second-section {
+    margin-top: 100px;
+}
+
+.third-section {
+    margin-top: 60px;
+    height: 670px;
+}
+
+.img {
+    width: 280px;
+}
+
+.fourth-section {
+    margin-bottom: 50px;
+}
+
+}
