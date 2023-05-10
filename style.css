@@ -1,0 +1,302 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: no-repeat url("https://raw.githubusercontent.com/Dev-Pedrosv/god-of-war-land-page/3695ecae9663d0df05f18d717f2e45e73aafd44b/assets/img/background.svg");
+    background-color: #16161a;
+    background-size: 106%;
+    padding: 0px 40px;
+}
+
+header {
+    width: 100%;
+    padding: 20px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-link {
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 19px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-link:after {
+    content: "";
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 176px;
+    height: 56px;
+    background: #5092d2;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #16161a;
+}
+
+.btn-primary:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.first-section {
+    margin-top: 150px;
+}
+
+h1 {
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 90%;
+    color: #fff;
+    width: 750px;
+}
+
+.first-section p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    width: 600px;
+    color: #fff;
+    opacity: 0.7;
+    margin-top: 16px;
+}
+
+.container-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.btn-secundary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 56px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.btn-secundary:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.container-video {
+    display: flex;
+    justify-content: end;
+    padding-right: 70px;
+    margin-top: 100px;
+}
+
+video {
+    width: 425px;
+    height: 240px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.second-section {
+    margin-top: 150px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 65px;
+    color: #fff;
+}
+
+.container-carousel {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel-item {
+    width: 250px;
+    height: 360px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.carousel-item:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.carousel-item::after {
+    content: "";
+    width: 100%;
+    height: 80%;
+    background: #27272e;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.carousel-item:hover::after {
+    border: 1px solid #5092d2;
+}
+
+.item {
+    width: 250px;
+    height: 360px;
+}
+
+.item-name {
+    position: absolute;
+    bottom: 12px;
+
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 32px;
+    line-height: 43px;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.third-section {
+    margin-top: 100px;
+    background: no-repeat url("./assets/img/background2.svg");
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-size: 100%;
+}
+
+.container-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img {
+    width: 400px;
+}
+
+.container-description {
+    width: 400px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.fourth-section {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.container-weapons {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.weapon {
+    display: flex;
+    align-items: center;
+    background: #27272e;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.weapon-description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.weapon-description h3 {
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 32px;
+    line-height: 43px;
+}
+
+.weapon-description p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.img-weapon {
+    height: 350px;
+    width: 220px;
+}
+
+@media (max-width: 1700px){
+    .container-video {
+    margin-top: 10px;
+}
+}
