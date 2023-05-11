@@ -22,8 +22,16 @@ header {
 }
 
 nav {
-
+    display: flex;
     align-items: center;
+    gap: 24px;
+}
+
+.menu-icon {
+    width: 25px;
+    margin-right: 15px;
+    display: none;
+    cursor: pointer;
 }
 
 ul {
@@ -311,7 +319,6 @@ h2 {
 body {
     background-size: 120%;
     background-position-x: -260px;
-
 }
 
 .first-section {
@@ -338,9 +345,11 @@ body {
 
 @media (max-width: 450px){
     body {
-        background-size: 400%;
-        background-position-x: -830px;
+        background-size: 380%;
+        background-position-x: -690px;
         padding: 0px 20px;
+        width: 100%;
+        height: 100%;
     }
 
     header img {
@@ -348,14 +357,143 @@ body {
     }
 
     #menu-list {
+        width: 128px;
         position: relative;
-        top: 60px;
-        left: 60px;
+        top: 50px;
+        left: 66px;
         overflow: hidden;
         transition: all 0.8s ease-in-out;
     }
 
+    ul {
+        display: inline-block;
+    }
+
+    ul .btn-primary {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-right: 0px;
+        width: 50px;
+    }
+
+    #nav-li {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .first-section {
+        margin-top: 60px;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .first-section p {
+        width: 100%;
+    }
+
+    .container-items {
+        display: inline-block;
+    }
+
+    .item {
+        width: 190px;
+        height: 275px;
+    }
+
+    .container-actions {
+        justify-content: center;
+    }
+
+    .btn-primary {
+        width: 140px;
+        height: 40px;
+    }
+
+    .btn-secundary {
+        height: 40px;
+    }
+
+    .container-video {
+        padding-right: 0px;
+        justify-content: center;
+    }
+
+    video {
+        width: 310px;
+        height: 175px;
+        margin-top: 20px;
+    }
+
+    .carousel-item {
+        width: 190px;
+        height: 275px;
+    }
+
+    .item-name {
+        font-size: 20px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .third-section {
+        background-size: 230%;
+        background-position-x: -250px;
+        height: 450px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .container-description {
+        margin-top: 135px;
+    }
 
 
 
+    .fourth-section {
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    .container-weapons {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .weapon {
+        margin-bottom: 20px;
+    }
+
+    .img-weapon {
+        height: 200px;
+        width: auto;
+    }
+
+    .weapon-description h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
