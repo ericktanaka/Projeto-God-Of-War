@@ -22,9 +22,13 @@ header {
 }
 
 nav {
+
+    align-items: center;
+}
+
+ul {
     display: flex;
     align-items: center;
-    gap: 24px;
 }
 
 .nav-link {
@@ -35,6 +39,8 @@ nav {
     color: #fff;
     position: relative;
     cursor: pointer;
+    list-style: none;
+    margin-right: 20px;
 }
 
 .nav-link:after {
@@ -328,5 +334,28 @@ body {
 .fourth-section {
     margin-bottom: 50px;
 }
+}
+
+@media (max-width: 450px){
+    body {
+        background-size: 400%;
+        background-position-x: -830px;
+        padding: 0px 20px;
+    }
+
+    header img {
+        width: 130px;
+    }
+
+    #menu-list {
+        position: relative;
+        top: 60px;
+        left: 60px;
+        overflow: hidden;
+        transition: all 0.8s ease-in-out;
+    }
+
+
+
 
 }

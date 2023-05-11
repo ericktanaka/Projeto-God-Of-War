@@ -14,10 +14,12 @@
     <header>
         <img src="./assets/img/739f1fbb30565e9cb1d880ad91447c5e 1.png" alt="logo-god-of-war">
         <nav>
-            <a class="nav-link">Vídeos e Telas</a>
-            <a class="nav-link">Bastidores</a>
-            <a class="nav-link">Comunidade</a>
-            <a class="btn-primary">Compre agora</a>
+            <ul id="menu-list">
+                <li class="nav-link">Vídeos e Telas</li>
+                <li class="nav-link">Bastidores</li>
+                <li class="nav-link">Comunidade</li>
+                <li class="btn-primary">Compre agora</li>
+            </ul>
         </nav>
     </header>
 
@@ -103,5 +105,19 @@
             </div>
         </section>
     </main>
+
+    <script>
+        const menuList = document.getElementById("menu-list")
+        menuList.style.maxHeight = "0px"
+    
+        function showMenu (){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "120px"
+            } else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    
+    </script>
 </body>
 </html>
